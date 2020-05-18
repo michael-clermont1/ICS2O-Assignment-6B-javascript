@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <form action="" id="pizzaform" onsubmit="return false;">
+    <fieldset>
+    <legend>Get a pizza here!</legend>
+    <label >Size Of the Pizza</label>
+    <input type="radio"  name="selectedpizza" value="Round6"
+    onclick="calculateTotal()" />
+    Small Pizza 6" -  serves 8 people ($20)
+    <input type="radio"  name="selectedpizza" value="Round8"
+    onclick="calculateTotal()" />
+    Medium Pizza 8" - serves 12 people ($25)
+    <input type="radio"  name="selectedpizza" value="Round10"
+    onclick="calculateTotal()" />
+    Large Pizza 10" - serves 16 people($35)
+    <input type="radio"  name="selectedpizza" value="Round12"
+    onclick="calculateTotal()" />
+    Extra Large Pizza 12" - serves 30 people($75)
+    <label >Toppings</label>
+    <select id="Toppings" name='Toppings'
+    onchange="calculateTotal()">
+    <option value="None">Select Topping</option>
+    <option value="Pepperoni">Pepperoni($1)</option>
+    <option value="Pineapple">Pineapple($1.50)</option>
+    <option value="Mushrooms">Mushrooms($1.50)</option>
+    <option value="Sausage">Sausage($1.50)</option>
+    <option value="Bacon">Bacon($1.50)</option>
+    <option value="Green peppers">Green peppers($1.50)</option>
+    <option value="Black olives">Black olives($1.50)</option>
+    <option value="Onions">Onions($1.50)</option>
+    <option value="Ham">Ham($1.50)</option>
+    <option value="Shrimp">Shrimp($1.75)</option>
+    <option value="Chicken">Chicken($1.75)</option>
+    <option value="Extra cheese">Extra cheese($1.25)</option>
+    </select>
+    <br/>
+    <label >2nd Toppings</label>
+    <select id="Toppings2" name='2nd Topping'
+    onchange="calculateTotal()">
+    <option value="None">Select Topping</option>
+    <option value="Pepperoni">Pepperoni($1)</option>
+    <option value="Pineapple">Pineapple($1.50)</option>
+    <option value="Mushrooms">Mushrooms($1.50)</option>
+    <option value="Sausage">Sausage($1.50)</option>
+    <option value="Bacon">Bacon($1.50)</option>
+    <option value="Green peppers">Green peppers($1.50)</option>
+    <option value="Black olives">Black olives($1.50)</option>
+    <option value="Onions">Onions($1.50)</option>
+    <option value="Ham">Ham($1.50)</option>
+    <option value="Shrimp">Shrimp($1.75)</option>
+    <option value="Chicken">Chicken($1.75)</option>
+    <option value="Extra cheese">Extra cheese($1.25)</option>
+    </select>
+    <br/>
+    <label >3rd Toppings</label>
+    <select id="Toppings3" name='3rd Topping'
+    onchange="calculateTotal()">
+    <option value="None">Select Topping</option>
+    <option value="Pepperoni">Pepperoni($1)</option>
+    <option value="Pineapple">Pineapple($1.50)</option>
+    <option value="Mushrooms">Mushrooms($1.50)</option>
+    <option value="Sausage">Sausage($1.50)</option>
+    <option value="Bacon">Bacon($1.50)</option>
+    <option value="Green peppers">Green peppers($1.50)</option>
+    <option value="Black olives">Black olives($1.50)</option>
+    <option value="Onions">Onions($1.50)</option>
+    <option value="Ham">Ham($1.50)</option>
+    <option value="Shrimp">Shrimp($1.75)</option>
+    <option value="Chicken">Chicken($1.75)</option>
+    <option value="Extra cheese">Extra cheese($1.25)</option>
+    </select>
+    <br/>
+    <label >4th Toppings</label>
+    <select id="Toppings4" name='4th Toppings'
+    onchange="calculateTotal()">
+    <option value="None">Select Topping</option>
+    <option value="Pepperoni">Pepperoni($1)</option>
+    <option value="Pineapple">Pineapple($1.50)</option>
+    <option value="Mushrooms">Mushrooms($1.50)</option>
+    <option value="Sausage">Sausage($1.50)</option>
+    <option value="Bacon">Bacon($1.50)</option>
+    <option value="Green peppers">Green peppers($1.50)</option>
+    <option value="Black olives">Black olives($1.50)</option>
+    <option value="Onions">Onions($1.50)</option>
+    <option value="Ham">Ham($1.50)</option>
+    <option value="Shrimp">Shrimp($1.75)</option>
+    <option value="Chicken">Chicken($1.75)</option>
+    <option value="Extra cheese">Extra cheese($1.25)</option>
+    </select>
+    <br/>
+    <div id="totalPrice"></div>
+    </fieldset>
+  </form>
+  <button type="button" onclick="getTotal()">Submit</button>
+  <p id="demo"></p>
+  </body>
+</html>
